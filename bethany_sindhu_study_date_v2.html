@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bethany ♡ Sindhu — International Academic Survival Club</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fredoka:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}
+:root{--ink:#594b5b;--muted:#9a8796;--paper:#fffdf8;--rose:#f0b3c8;--lav:#d8cff1}
+body{margin:0;min-height:100vh;overflow-x:hidden;font-family:"Fredoka",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 12% 18%,rgba(255,255,255,.95) 0 85px,transparent 86px),radial-gradient(circle at 88% 75%,rgba(255,255,255,.62) 0 125px,transparent 126px),radial-gradient(circle at 75% 12%,rgba(236,217,241,.65) 0 80px,transparent 81px),linear-gradient(135deg,#fae9e8,#f4eafb 46%,#e9f3ef);position:relative}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background:repeating-linear-gradient(0deg,transparent 0 7px,rgba(100,80,80,.035) 8px),repeating-linear-gradient(90deg,transparent 0 9px,rgba(100,80,80,.025) 10px)}
+.doodle{position:fixed;pointer-events:none;opacity:.7;animation:float 5s ease-in-out infinite}
+.book{left:5vw;top:16vh;font-size:42px}.mug{right:6vw;top:14vh;font-size:38px;animation-delay:.8s}.pencil{left:8vw;bottom:13vh;font-size:35px;animation-delay:1.4s}.note{right:7vw;bottom:14vh;font-size:40px;animation-delay:2s}.star1{left:18vw;top:7vh}.star2{right:20vw;bottom:8vh}
+@keyframes float{50%{transform:translateY(-9px) rotate(3deg)}}
+.desk{min-height:100vh;display:grid;place-items:center;padding:34px 20px;position:relative;z-index:1}
+.paper{width:min(720px,94vw);min-height:650px;position:relative;padding:52px 42px 34px;text-align:center;background:linear-gradient(90deg,rgba(234,213,218,.18) 1px,transparent 1px),linear-gradient(rgba(234,213,218,.12) 1px,transparent 1px),var(--paper);background-size:24px 24px;border:1px solid white;border-radius:8px;box-shadow:0 25px 60px rgba(83,67,83,.18);transform:rotate(-.35deg)}
+.tape{position:absolute;width:105px;height:27px;background:rgba(231,202,194,.52);top:-12px;left:50%;transform:translateX(-50%) rotate(-2deg)}
+.corner{position:absolute;font-size:25px;opacity:.65}.tl{left:20px;top:17px}.tr{right:22px;top:18px}.bl{left:23px;bottom:19px}.br{right:22px;bottom:19px}
+.eyebrow{color:var(--muted);font-size:12px;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+.club{font-family:"Caveat",cursive;font-size:clamp(48px,8vw,72px);line-height:.85;color:#625568;margin:0}
+.club-sub{margin:12px auto 0;font-family:"Caveat",cursive;font-style:italic;font-size:25px;color:#927c8e}
+.divider{display:flex;align-items:center;gap:10px;margin:27px auto;color:#c79cac;max-width:400px}.divider:before,.divider:after{content:"";height:1px;flex:1;background:#eadfe0}
+.intro{max-width:510px;margin:0 auto 31px;font-size:16px;line-height:1.7;color:#796d79}
+.question-label{font-size:12px;color:#aa8e9f;letter-spacing:1.8px;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+h1{margin:0 auto;max-width:590px;font-family:"Caveat",cursive;font-size:clamp(31px,6vw,47px);line-height:1.15;color:#594b5b}
+.quote{margin:15px auto 0;font-weight:700;font-size:24px;color:#b98f73}
+.buttons{height:145px;max-width:500px;margin:31px auto 0;position:relative}
+button{border:0;font:inherit;font-weight:700;cursor:pointer;border-radius:999px;padding:15px 28px;font-size:17px;box-shadow:0 7px 16px rgba(80,60,80,.13);transition:.18s}
+#yes{background:var(--rose);color:#71465a;position:relative;z-index:2}#yes:hover{transform:translateY(-3px) scale(1.04)}
+#no{position:absolute;left:59%;top:8px;background:#e8e3eb;color:#776c7b;z-index:3;white-space:nowrap}
+.ps{margin-top:2px;font-family:"Caveat",cursive;font-style:italic;color:#9d8595;font-size:21px}
+.drinks{display:inline-block;margin-top:12px;padding:8px 14px;border-radius:999px;background:#f8eee6;color:#9a7359;font-size:13px;font-weight:700}
+.footer{position:absolute;bottom:27px;left:20px;right:20px;color:#b09ca9;font-size:11px}
+.hidden{display:none}.success{animation:appear .55s ease both}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.success .big{font-size:61px}.success h1{font-size:clamp(35px,7vw,57px)}
+.pact{margin:25px auto 0;max-width:525px;padding:21px 24px;background:#fff8fa;border:1px dashed #ddb5c5;border-radius:18px;line-height:1.75;color:#776a76;font-size:15px}.pact strong{color:#9a5d76}
+.signature{margin-top:17px;font-family:"Caveat",cursive;font-style:italic;color:#9b7c90}.again{margin-top:23px;background:var(--lav);color:#62557d}
+.heart{position:fixed;bottom:-35px;pointer-events:none;z-index:20;animation:rise 3.8s linear forwards}@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:600px){.paper{padding:45px 20px 34px;min-height:680px}.doodle{opacity:.35}}
+</style>
+</head>
+<body>
+<div class="doodle book">📚</div><div class="doodle mug">☕</div><div class="doodle pencil">✏️</div><div class="doodle note">📝</div><div class="doodle star1">✦</div><div class="doodle star2">✧</div>
+<main class="desk">
+<section class="paper" id="questionCard">
+<div class="tape"></div><div class="corner tl">♡</div><div class="corner tr">✦</div><div class="corner bl">✎</div><div class="corner br">☕</div>
+<div class="eyebrow">✦ WELCOME TO THE ✦</div>
+<h2 class="club">BETHANY ♡ SINDHU</h2>
+<div class="club-sub">The International Academic Survival Club</div>
+<div class="divider">✦</div>
+
+<div class="question-label">today's very important question</div>
+<h1>Wanna have a little study date with me? 📚♡</h1>
+<div class="quote">“Two academic weapons against the world.”</div>
+<div class="drinks">☕ BRING YOUR OWN DRINKS TO DA STUDY DATE!</div>
+<div class="buttons" id="buttonArea"><button id="yes">YESSS 💗</button><button id="no">no 🙄</button></div>
+<div class="ps">P.S. the no button is a little shy 👀</div>
+<div class="footer">made with questionable academic decisions by Bethany &amp; Sindhu ♡</div>
+</section>
+<section class="paper success hidden" id="successCard">
+<div class="tape"></div><div class="corner tl">♡</div><div class="corner tr">✦</div><div class="corner bl">✎</div><div class="corner br">☕</div>
+<div class="big">🎀📚☕</div><div class="eyebrow">OFFICIALLY CONFIRMED</div>
+<h1>IT'S A STUDY DATE!!!</h1>
+<p class="intro">The International Academic Survival Club has officially assembled.</p>
+<div class="pact"><strong>THE OFFICIAL BESTIE STUDY PACT</strong><br><br>☕ drinks acquired<br>📚 textbooks open<br>💻 laptops charged<br>🧠 brain cells: questionable<br><br><strong>Distance: defeated.</strong><br><strong>Academic suffering: shared.</strong></div>
+<div class="signature">Bethany ♡ Sindhu</div>
+<button class="again" id="again">ask me again 🥹</button>
+<div class="footer">made with questionable academic decisions by Bethany &amp; Sindhu ♡</div>
+</section>
+</main>
+<script>
+const no=document.getElementById("no"),yes=document.getElementById("yes"),area=document.getElementById("buttonArea"),questionCard=document.getElementById("questionCard"),successCard=document.getElementById("successCard"),again=document.getElementById("again");
+function moveNo(){const a=area.getBoundingClientRect(),b=no.getBoundingClientRect();no.style.left=Math.random()*Math.max(0,a.width-b.width)+"px";no.style.top=Math.random()*Math.max(0,a.height-b.height)+"px"}
+no.addEventListener("mouseenter",moveNo);no.addEventListener("pointerdown",e=>{e.preventDefault();moveNo()});no.addEventListener("click",e=>{e.preventDefault();moveNo()});
+yes.addEventListener("click",()=>{questionCard.classList.add("hidden");successCard.classList.remove("hidden");celebration()});
+again.addEventListener("click",()=>{successCard.classList.add("hidden");questionCard.classList.remove("hidden");no.style.left="59%";no.style.top="8px"});
+function celebration(){const s=["♡","♥","✦","✧","🎀","💗","✨","☕","📚"];for(let i=0;i<38;i++){let x=document.createElement("div");x.className="heart";x.textContent=s[Math.floor(Math.random()*s.length)];x.style.left=Math.random()*100+"vw";x.style.animationDuration=2.3+Math.random()*2+"s";x.style.fontSize=14+Math.random()*18+"px";document.body.appendChild(x);setTimeout(()=>x.remove(),4700)}}
+</script>
+</body>
+</html>
